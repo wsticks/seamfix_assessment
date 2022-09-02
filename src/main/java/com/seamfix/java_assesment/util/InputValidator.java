@@ -18,7 +18,6 @@ public class InputValidator {
             messageBuilder.append(fieldError.getField());
             messageBuilder.append(" ");
             messageBuilder.append(fieldError.getDefaultMessage());
-            //messageBuilder.append("; ");
         }
         throw new BadRequestException(messageBuilder.toString().trim());
     }

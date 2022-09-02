@@ -3,7 +3,6 @@ package com.seamfix.java_assesment.controller;
 import com.seamfix.java_assesment.constant.ResponseCodes;
 import com.seamfix.java_assesment.exception.BadRequestException;
 import com.seamfix.java_assesment.model.response.ApiErrorResponse;
-import com.seamfix.java_assesment.util.CustomResponseCode;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
