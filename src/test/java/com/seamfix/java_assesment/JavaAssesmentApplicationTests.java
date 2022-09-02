@@ -6,18 +6,22 @@ import com.seamfix.java_assesment.service.BvnValidationService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.mockito.junit.jupiter.MockitoSettings;
+import org.mockito.quality.Strictness;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.mockito.Mockito.when;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(MockitoJUnitRunner.Silent.class)
+@MockitoSettings(strictness = Strictness.LENIENT)
 @SpringBootTest
 public class JavaAssesmentApplicationTests {
 
     @Mock
-     BvnValidationService service;
+    BvnValidationService service;
 
     @Test
     public void validateBvn(){
